@@ -1598,14 +1598,12 @@
       ]
     },
     "prop:use_anchored_offset": {
-      "prop:inherit_max_sibling_height": {
-        "markdownDescription": "**Type**: ```Any```\t\n\t\n**Default**: ```false```",
-        "default": false,
-        "oneOf": [
-          { "type": "boolean" },
-          { "$ref": "#/definitions/vl:variable" }
-        ]
-      }
+      "markdownDescription": "**Type**: ```Any```\t\n\t\n**Default**: ```false```",
+      "default": false,
+      "oneOf": [
+        { "type": "boolean" },
+        { "$ref": "#/definitions/vl:variable" }
+      ]
     },
     // Stack Panel
     "prop:orientation": {
@@ -2877,7 +2875,7 @@
       "oneOf": [
         {
           "type": "object",
-          "additionalItems": false,
+          "additionalProperties": false,
           "properties": {
             "name": {
               "type": "string"
@@ -2983,7 +2981,7 @@
     },
     "vl:binding_item": {
       "type": "object",
-      "additionalItems": false,
+      "additionalProperties": false,
       "properties": {
         "ignored": {
           "markdownDescription": "If binding is completely ignored.\t\n\t\n**Default**: ```false```\t\n\t\n**Version**: ```+1.17```",
